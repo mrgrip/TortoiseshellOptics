@@ -1,0 +1,1 @@
+This repo is a project from Code Academy's Freelance Web Development curriculum in order to help a student like me improve skills in responsive design.
