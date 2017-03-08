@@ -22,6 +22,7 @@ html {
 
 #banner {
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+	background-repeat: no-repeat;
 	background-size: cover;
 	height: 31rem;
 }
@@ -50,6 +51,9 @@ header ul li {
 	margin: 1rem 2rem 1rem 0; 
 }
 
+.menu {
+	display: none;
+}
 /***** Headline *****/
 
 #flex-end-headline {
@@ -67,4 +71,208 @@ header ul li {
 	font-size: 2rem;
 	font-weight: bold;
 	padding: 1.5rem 5rem 1.5rem 5rem;
+}
+
+/***** End Banner section *****/
+
+/***** Icons *****/
+
+#icons {
+	align-items: center;
+	justify-content: center;
+	margin: 3rem auto; 
+}
+
+.item {
+	align-items: center;
+	flex-direction: column;
+	height: 8rem;
+	justify-content: center;
+	padding: 0 3rem;
+}
+
+.image {
+	align-items: flex-start;
+	padding-bottom: 5rem;
+}
+
+#paper-icon {
+	width: 3.5rem;
+}
+
+.item img {
+	width: 5rem;
+}
+
+/***** Text section *****/
+
+#text {
+	margin-bottom: 4rem;
+}
+
+.textitem {
+	width: 35%;
+	margin: 0 5%;
+}
+
+.textitem p {
+	background-color: cadetblue;
+	font-weight: bold;
+	padding: 0.5rem 0 0.5rem 1.25rem;
+	margin-bottom: 1rem;
+	width: 10rem;
+}
+
+/***** Footer *****/
+
+footer {
+	align-items: center;
+	background-color: azure;
+}
+
+#logo-black {
+	height: 1.5rem;
+	margin: 4rem 1rem 4rem 3rem;
+}
+
+/***** Media Queries *****/
+
+/***** Tablet *****/
+@media only screen and (max-width: 1024px) {
+	.container {
+		max-width: 100%;
+	}
+
+	header {
+		top: 0rem;
+	}
+
+	#banner {
+		height: 25rem;
+		background-position: 35%;
+	}
+
+	#headline {
+		margin-right: 2rem;
+		margin-top: 5rem;
+	}
+
+	#headline h1 {
+		font-size: 1.33rem;
+		padding: 1.25rem 4rem;
+	}
+}
+
+/***** Pre-mobile content collapse *****/
+@media only screen and (max-width: 670px) {
+	header span {
+		display: none;
+	}
+
+	#logo-white {
+		margin-right: auto;
+	}
+
+	.full {
+		display: none;
+	}
+
+	.menu {
+		display: inline-block;
+	}
+
+	#headline {
+		margin-top: 15rem;
+	}
+}
+
+/***** Mobile *****/
+@media only screen and (max-width: 540px) {
+	
+	/***** Banner section *****/
+	#banner {
+		height: 17rem;
+		background-position: 20%;
+	}
+
+	#headline {
+		margin-top: 9rem;
+		margin-right: 0rem;
+		text-align: center;
+		width: 100%;
+	}
+
+	#headline h1 {
+		font-size: 1rem;
+		padding: 1rem 0;
+	}
+
+	/***** Icons section *****/
+	#icons {
+		flex-direction: column;
+		margin: 3.77rem 0;
+	}
+
+	.item {
+		height: 5rem;
+	}
+
+	#first-icon {
+		height: 7rem;
+		padding-bottom: 1.54rem;
+	}
+
+	#last-icon {
+		padding-top: 1.54rem;
+	}
+
+	.image {
+		padding-bottom: 1rem;
+	}
+
+	.item p {
+		font-size: 0.77rem;
+	}
+
+	/***** Text section *****/
+
+	#text {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.textitem {
+		margin: 0 auto;
+		padding-bottom: 4rem;
+		width: 100%;
+	}
+
+	.textitem p {
+		width: 100%;
+		padding: 0.5rem 0;
+		text-align: center;
+	}
+
+	.textitem div {
+		padding-left: 0.33rem;
+		width: 97%;
+	}
+
+	.textitem span {
+		font-size: 0.77rem;
+	}
+
+	/***** Footer *****/
+	footer {
+		align-items: center;
+		justify-content: center;
+	}
+
+	#logo-black {
+		margin: 4rem 0;
+	}
+
+	footer span {
+		display: none;
+	}
 }
